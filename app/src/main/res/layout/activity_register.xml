@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="24dp"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lod">
+
+    <ImageView
+        android:id="@+id/applogo"
+        android:layout_width="126dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/applogo" />
+
+    <TextView
+        android:id="@+id/registerTitle"
+        android:layout_width="202dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Secure Vote"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/applogo" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="308dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edt_background"
+        android:gravity="center"
+        android:hint="Enter your name"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/registerTitle" />
+
+    <Button
+        android:id="@+id/registerBiometric"
+        android:layout_width="271dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="52dp"
+        android:text="Register with Biometrics"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username" />
+
+    <TextView
+        android:id="@+id/registerMessage"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/registerBiometric"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
